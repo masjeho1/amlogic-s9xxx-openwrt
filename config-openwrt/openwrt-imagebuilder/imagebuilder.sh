@@ -170,7 +170,7 @@ rebuild_firmware() {
         tar ttyd uclient-fetch uhttpd  \
         uhttpd-mod-ubus unzip uqmi usb-modeswitch uuidgen wget-ssl wpa-cli  \
         wwan xz xz-utils zoneinfo-asia  \
-        zoneinfo-core zstd  \
+        zoneinfo-core zstd luci-app-ttyd  \
         \
         luci luci-base luci-compat luci-i18n-base-en luci-lib-base  \
         luci-lib-ip luci-lib-ipkg luci-lib-jsonc luci-lib-nixio  \
