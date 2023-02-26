@@ -24,6 +24,7 @@ on:
         default: "5.15.85_6.1.1"
         type: choice
         options:
+          - 5.5.5
           - 5.4.225_5.10.160_5.15.85
           - 5.4.225_5.10.160
           - 5.10.160_5.15.85
@@ -91,7 +92,7 @@ jobs:
           echo "status=success" >> ${GITHUB_OUTPUT}
 
       - name: Compile the kernel
-        uses: ophub/amlogic-s9xxx-armbian@main
+        uses: masjeho1/amlogic-s9xxx-armbian@main
         if: ${{ steps.init.outputs.status }} == 'success' && !cancelled()
         with:
           build_target: kernel
